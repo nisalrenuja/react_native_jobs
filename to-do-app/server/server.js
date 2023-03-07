@@ -1,10 +1,15 @@
 const PORT = process.env.PORT || 8000;
 const express = require("express");
-
 const app = express();
+const pool = require("./db");
 
-app.get("/", (req, res) => {
-  res.send("Hello Nisal!");
+app.get("/todos", async (req, res) => {
+  try {
+    const allTodos = await pool.query("SELECT * FROM todos");
+    res.json(allTodos.rows);
+  } catch (err) {
+    console.error(err.message);
+  }
 });
 
 app.listen(PORT, () => {
