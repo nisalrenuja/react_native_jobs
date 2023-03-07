@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  background-color: rgb(191, 209, 225);
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  background-color: rgb(255, 255, 225);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 10px, rgba(0, 0, 0, 0.08) 0 0px 1px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 800px;
+  margin-top: 50px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.button-container button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 10px;
+  background-color: transparent;
+}
+
+.list-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
+}
