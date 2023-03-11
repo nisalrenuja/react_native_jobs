@@ -1,37 +1,114 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
-  background-color: rgb(191, 209, 225);
-  display: flex;
-  justify-content: center;
+  font-family: sans-serif;
+  background-color: #f2f2f2;
 }
 
 .app {
-  background-color: rgb(255, 255, 225);
-  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 10px, rgba(0, 0, 0, 0.08) 0 0px 1px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
   border-radius: 10px;
-  padding: 10px;
-  width: 800px;
-  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.button-container {
+.button-container,
+.info-container {
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
 }
 
 .button-container button {
-  margin: 0 5px;
-  padding: 5px 10px;
-  border-radius: 12px;
-  font-size: 10px;
-  background-color: transparent;
+  margin-left: 10px;
+}
+
+.create {
+  background-color: #242278;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.create:hover {
+  background-color: #48479c;
+  color: white;
+}
+
+.signOut {
+  background-color: #242278;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.signOut:hover {
+  background-color: #48479c;
+  color: white;
+}
+
+.edit-button {
+  background-color: #242278;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.delete-button {
+  background-color: #242278;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .list-header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+.tick {
+  padding: 10px;
+}
+
+.tick path {
+  color: green;
+  font-size: 20px;
+  cursor: pointer;
 }
