@@ -36,10 +36,10 @@ const Modal = ({ mode, setShowModal }) => {
             placeholder="You're title goes here"
             name="title"
             value={data.title}
-            onchange={handleChange}
+            onChange={handleChange}
           />
           <br />
-          <label for="range">Drag to select your current progress</label>
+          <label>Drag to select your current progress</label>
           <input
             id="range"
             type="range"
@@ -47,7 +47,7 @@ const Modal = ({ mode, setShowModal }) => {
             max="100"
             name="progress"
             value={""}
-            onchange={handleChange}
+            onChange={handleChange}
           />
           <input className={mode} type="submit" />
         </form>
