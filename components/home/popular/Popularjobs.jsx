@@ -27,9 +27,15 @@ const Popularjobs = () => {
         {isLoading ? (
           <ActivityIndicator size="large" color={COLORS.primary} />
         ) : error ? (
-          <Text style={styles.error}>Something Went Wrong</Text>
+          <Text>Something Went Wrong</Text>
         ) : (
-          <FlatList />
+          <FlatList
+            data={[1, 2, 3, 4]}
+            renderItem={({ item }) => <PopularJobCard item={item} />}
+            keyExtractor={(item) => item?.job_id}
+            contentContainerStyle={{ columnGap: SIZES.medium }}
+            horizontal
+          />
         )}
       </View>
     </View>
